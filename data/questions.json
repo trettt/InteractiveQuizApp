@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "quizId": 1,
+    "question": "What is the capital of France?",
+    "answers": ["Berlin", "London", "Paris", "Madrid"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 2,
+    "quizId": 1,
+    "question": "When did WW2 start?",
+    "answers": ["1945", "1939", "1914", "1929"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 3,
+    "quizId": 1,
+    "question": "Who painted the \"Mona Lisa\"?",
+    "answers": ["Da Vinci", "Picasso", "Van Gogh", "Rembrandt"],
+    "correctAnswerPosition": 0
+  }
+]
