@@ -2,7 +2,7 @@
 
 ## Description
 
-    The <i>Quiz App</i> is an interactive web application built using <b>Next.js</b> and <b>React</b> that allows users to participate in quizzes on a variety of topics. This project is part of the <>JavaScriptv</b> course from <i>Generația Tech</i>, a program by Digital Nation. This app dynamically fetches quiz questions via API calls, and users can answer single-choice questions while their score is tracked. The app is designed to be extendable, with the ability to add more questions to the quizzes, and it supports server-side rendering (SSR) for optimized performance.
+   The <i>Quiz App</i> is an interactive web application built using <b>Next.js</b> and <b>React</b> that allows users to participate in quizzes on a variety of topics. This project is part of the <>JavaScriptv</b> course from <i>Generația Tech</i>, a program by Digital Nation. This app dynamically fetches quiz questions via API calls, and users can answer single-choice questions while their score is tracked. The app is designed to be extendable, with the ability to add more questions to the quizzes, and it supports server-side rendering (SSR) for optimized performance.
 
 ## Getting Started
 
