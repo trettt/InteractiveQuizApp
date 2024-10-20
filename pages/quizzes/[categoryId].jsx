@@ -20,6 +20,16 @@ const quizzes = [
     categoryId: 1,
     title: "Quiz 2",
   },
+  {
+    id: 3,
+    categoryId: 2,
+    title: "Quiz 1",
+  },
+  {
+    id: 4,
+    categoryId: 2,
+    title: "Quiz 2",
+  },
 ];
 
 export default function Quizzes() {

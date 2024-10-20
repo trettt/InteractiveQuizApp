@@ -7,12 +7,22 @@ const quizzes = [
   {
     id: 1,
     categoryId: 1,
-    title: "Quiz 1 - General Knowledge",
+    title: "Quiz 1",
   },
   {
     id: 2,
+    categoryId: 1,
+    title: "Quiz 2",
+  },
+  {
+    id: 3,
     categoryId: 2,
-    title: "Quiz 2 - Science",
+    title: "Quiz 1",
+  },
+  {
+    id: 4,
+    categoryId: 2,
+    title: "Quiz 2",
   },
 ];
 
