@@ -1,4 +1,4 @@
-# The Best Quiz App (for sure not self proclaimed)
+# The Best Quiz App (for sure not self-proclaimed)
 
 ## Description
 
