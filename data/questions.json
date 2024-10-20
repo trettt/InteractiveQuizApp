@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "quizId": 1,
+    "question": "What is the capital of France?",
+    "answers": ["Berlin", "London", "Paris", "Madrid"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 2,
+    "quizId": 1,
+    "question": "When did WW2 start?",
+    "answers": ["1945", "1939", "1914", "1929"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 3,
+    "quizId": 1,
+    "question": "Who painted the \"Mona Lisa\"?",
+    "answers": ["Da Vinci", "Picasso", "Van Gogh", "Rembrandt"],
+    "correctAnswerPosition": 0
+  },
+  {
+    "id": 4,
+    "quizId": 2,
+    "question": "Which planet is known as the Red Planet?",
+    "answers": ["Earth", "Mars", "Jupiter", "Venus"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 5,
+    "quizId": 2,
+    "question": "What is the largest mammal?",
+    "answers": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 6,
+    "quizId": 2,
+    "question": "Who wrote 'Hamlet'?",
+    "answers": [
+      "William Wordsworth",
+      "Charles Dickens",
+      "William Shakespeare",
+      "George Orwell"
+    ],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 7,
+    "quizId": 2,
+    "question": "What is the hardest natural substance on Earth?",
+    "answers": ["Gold", "Iron", "Diamond", "Granite"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 8,
+    "quizId": 1,
+    "question": "What is the longest river in the world?",
+    "answers": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+    "correctAnswerPosition": 0
+  },
+  {
+    "id": 9,
+    "quizId": 1,
+    "question": "Which country is the origin of the cocktail Mojito?",
+    "answers": ["Brazil", "Mexico", "Cuba", "Spain"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 10,
+    "quizId": 2,
+    "question": "What is the smallest country in the world?",
+    "answers": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 11,
+    "quizId": 3,
+    "question": "What is the chemical symbol for gold?",
+    "answers": ["Au", "Ag", "Pb", "Fe"],
+    "correctAnswerPosition": 0
+  },
+  {
+    "id": 15,
+    "quizId": 3,
+    "question": "What gas do plants absorb from the atmosphere?",
+    "answers": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 16,
+    "quizId": 3,
+    "question": "What is the boiling point of water in Celsius?",
+    "answers": ["90°C", "100°C", "110°C", "120°C"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 17,
+    "quizId": 3,
+    "question": "What is the powerhouse of the cell?",
+    "answers": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 18,
+    "quizId": 3,
+    "question": "Which planet is the hottest in our solar system?",
+    "answers": ["Mercury", "Venus", "Mars", "Earth"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": 19,
+    "quizId": 4,
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "answers": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 20,
+    "quizId": 4,
+    "question": "What is the hardest metal?",
+    "answers": ["Steel", "Titanium", "Tungsten", "Aluminum"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 21,
+    "quizId": 4,
+    "question": "Which element has the atomic number 1?",
+    "answers": ["Oxygen", "Helium", "Hydrogen", "Carbon"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 22,
+    "quizId": 4,
+    "question": "What is the human body’s largest organ?",
+    "answers": ["Liver", "Heart", "Skin", "Brain"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": 23,
+    "quizId": 4,
+    "question": "What force keeps us on the ground?",
+    "answers": ["Magnetism", "Gravity", "Friction", "Inertia"],
+    "correctAnswerPosition": 1
+  }
+]

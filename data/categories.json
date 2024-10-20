@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "General Knowledge"
+    },
+    {
+        "id": 2,
+        "name": "Science"
+    },
+    {
+        "id": 3,
+        "name": "History"
+    },
+    {
+        "id": 4,
+        "name": "Geography"
+    },
+    {
+        "id": 5,
+        "name": "Art"
+    },
+    {
+        "id": 6,
+        "name": "Sports"
+    },
+    {
+        "id": 7,
+        "name": "Entertainment"
+    },
+    {
+        "id": 8,
+        "name": "Politics"
+    },
+    {
+        "id": 9,
+        "name": "Animals"
+    },
+    {
+        "id": 10,
+        "name": "Music"
+    }
+]
