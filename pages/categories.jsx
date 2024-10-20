@@ -7,27 +7,35 @@ import {
   Container,
   Button,
 } from "@mui/material";
-
-const categories = [
-  {
-    id: "1",
-    name: "General Knowledge",
-  },
-  {
-    id: "2",
-    name: "Science",
-  },
-  {
-    id: "3",
-    name: "Sports",
-  },
-  {
-    id: "4",
-    name: "Music",
-  },
-];
+import { useEffect, useState } from "react";
 
 export default function Categories() {
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchCategories() {
+      try {
+        const res = await fetch("/api/categories");
+        if (!res.ok) {
+          throw new Error("Failed to fetch categories");
+        }
+        const data = await res.json();
+        setCategories(data);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    }
+
+    fetchCategories();
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+
   return (
     <Container maxWidth="sm" sx={{ marginTop: 5 }}>
       <Typography variant="h4" align="center" gutterBottom>
