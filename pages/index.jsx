@@ -11,13 +11,15 @@ export default function Home() {
         <link rel="icon" href="/quiz.png" />
       </Head>
       <div className={styles.box}>
-        <h1>Welcome to the Quiz of Quizzes!</h1>
-        <p>
+        <h1 className={styles.title}>
+          <u>Welcome to the Quiz of Quizzes!</u>
+        </h1>
+        <p className={styles.description}>
           Think you know everything? Well, it’s time to prove it! But hey, no
-          pressure... Ready to begin?
+          pressure...
         </p>
-        <Link href="/categories" passHref>
-          <button className={styles.button}>Start Quiz</button>
+        <Link href="/categories">
+          <button className={styles.button}>Ready to begin?</button>
         </Link>
       </div>
     </div>

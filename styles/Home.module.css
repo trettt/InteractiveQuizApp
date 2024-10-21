@@ -7,15 +7,30 @@
   text-align: center;
 }
 
+.title {
+  font-size: 2.5rem;
+  color: #a07952;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #b99470;
+}
+
 .box {
   width: 50%;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #f7dcb9;
   border-radius: 30px;
   color: #b99470;
+  gap: 10%;
+  box-shadow: #b99470dc 5px 5px, #b99470c4 10px 10px, #b9947094 15px 15px,
+    #b9947065 25px 25px;
 }
 
 .button {
@@ -26,9 +41,9 @@
   padding: 10px 20px;
   margin: 10px;
   cursor: pointer;
+  font-size: large;
 }
 
 .button:hover {
-  background-color: #f7dcb9;
-  color: #b99470;
+  background-color: #a07952;
 }
