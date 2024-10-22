@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import styles from "../styles/Categories.module.css";
+import styles from "../styles/CategoriesQuizzes.module.css";
 
 export default function Categories() {
   const [categories, setCategories] = useState([]);

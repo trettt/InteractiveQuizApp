@@ -23,7 +23,6 @@
   border-radius: 20px;
   padding: 20px;
   transition: transform 0.2s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #f7dcb9;
 }
@@ -39,4 +38,10 @@
   font-size: 1.5rem;
   color: #f7dcb9;
   height: 100vh;
+}
+
+.quizList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
