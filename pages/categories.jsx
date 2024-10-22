@@ -1,13 +1,6 @@
 import Link from "next/link";
-import {
-  Typography,
-  List,
-  ListItem,
-  ListItemText,
-  Container,
-  Button,
-} from "@mui/material";
 import { useEffect, useState } from "react";
+import styles from "../styles/CategoriesQuizzes.module.css";
 
 export default function Categories() {
   const [categories, setCategories] = useState([]);
@@ -33,28 +26,33 @@ export default function Categories() {
     fetchCategories();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading)
+    return (
+      <div className={styles.message}>
+        <p>Loading...</p>
+      </div>
+    );
+  if (error)
+    return (
+      <div className={styles.message}>
+        <p>Error: {error.message}</p>
+      </div>
+    );
 
   return (
-    <Container maxWidth="sm" sx={{ marginTop: 5 }}>
-      <Typography variant="h4" align="center" gutterBottom>
-        Choose a Category
-      </Typography>
-      <List>
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        <i>Choose a Category</i>
+      </h1>
+      <div className={styles.grid}>
         {categories.map((category) => (
-          <ListItem button key={category.id} sx={{ marginBottom: 2 }}>
-            <Link
-              href={`/quizzes/${category.id}`}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <Button fullWidth variant="contained" color="primary">
-                <ListItemText primary={category.name} />
-              </Button>
-            </Link>
-          </ListItem>
+          <Link href={`/quizzes/${category.id}`} key={category.id}>
+            <div className={styles.card}>
+              <h3>{category.name}</h3>
+            </div>
+          </Link>
         ))}
-      </List>
-    </Container>
+      </div>
+    </div>
   );
 }

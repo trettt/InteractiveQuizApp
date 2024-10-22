@@ -1,0 +1,64 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 40px;
+  color: #f7dcb9;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #f7dcb9;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #a7835f;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  color: #f7dcb9;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.button {
+  background-color: #a7835f;
+  color: #f7dcb9;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.quizList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
