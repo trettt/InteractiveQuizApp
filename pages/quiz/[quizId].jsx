@@ -2,39 +2,40 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import QuestionForm from "@/components/questionForm";
-
-const quizzes = [
-  {
-    id: 1,
-    categoryId: 1,
-    title: "Quiz 1",
-  },
-  {
-    id: 2,
-    categoryId: 1,
-    title: "Quiz 2",
-  },
-  {
-    id: 3,
-    categoryId: 2,
-    title: "Quiz 1",
-  },
-  {
-    id: 4,
-    categoryId: 2,
-    title: "Quiz 2",
-  },
-];
+import styles from "../../styles/Quiz.module.css";
 
 export default function Quiz() {
   const router = useRouter();
   const { quizId } = router.query;
+
   const [numberOfQuestions, setNumberOfQuestions] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showForm, setShowForm] = useState(false);
+  const [quiz, setQuiz] = useState(null);
 
-  const currentQuiz = quizzes.find((quiz) => quiz.id === parseInt(quizId));
+  useEffect(() => {
+    async function fetchQuiz() {
+      try {
+        const res = await fetch("/api/quizzes");
+        if (!res.ok) {
+          throw new Error("Failed to fetch quizzes");
+        }
+        const data = await res.json();
+        const currentQuiz = data.find((quiz) => quiz.id === parseInt(quizId));
+        console.log(currentQuiz);
+        setQuiz(currentQuiz);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    }
+
+    if (quizId) {
+      fetchQuiz();
+    }
+  }, [quizId]);
 
   useEffect(() => {
     async function fetchQuestions() {
@@ -54,21 +55,21 @@ export default function Quiz() {
       }
     }
 
-    if (quizId) {
+    if (quizId && quiz) {
       fetchQuestions();
     }
-  }, [quizId]);
-
-  if (!currentQuiz) {
-    return <h1>Quiz not found</h1>;
-  }
+  }, [quizId, quiz]);
 
   if (loading) {
-    return <p>Loading questions...</p>;
+    return <p className={styles.message}>Loading questions...</p>;
   }
 
   if (error) {
-    return <p>Error: {error}</p>;
+    return <p className={styles.message}>Error: {error}</p>;
+  }
+
+  if (!quiz) {
+    return <h1 className={styles.message}>Quiz not found</h1>;
   }
 
   const handleContributeClick = () => {
@@ -76,24 +77,29 @@ export default function Quiz() {
   };
 
   return (
-    <>
-      <div>
-        <h1>{currentQuiz.title}</h1>
-        <p>This quiz contains {numberOfQuestions} questions.</p>
-        <Link href={`/quiz/${quizId}/question/1`}>Start Quiz</Link>
-      </div>
-      <div>
-        <button onClick={handleContributeClick}>
-          {showForm ? "Hide Form" : "Contribute to the Quiz"}
-        </button>
-        {showForm && (
-          <QuestionForm
-            quizId={quizId}
-            numberOfQuestions={numberOfQuestions}
-            setNumberOfQuestions={setNumberOfQuestions}
-          />
-        )}
-      </div>
-    </>
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        <u>
+          <i>{quiz.title}</i>
+        </u>
+      </h1>
+      <p className={styles.info}>
+        This quiz contains <b>{numberOfQuestions}</b> questions.
+      </p>
+      <Link href={`/quiz/${quizId}/question/1`}>
+        <button className={styles.button}>Start Quiz</button>
+      </Link>
+      <p> ... or </p>
+      <p onClick={handleContributeClick} className={styles.contribute}>
+        <u>{showForm ? "Hide Form" : "Contribute to the Quiz"}</u>
+      </p>
+      {showForm && (
+        <QuestionForm
+          quizId={quizId}
+          numberOfQuestions={numberOfQuestions}
+          setNumberOfQuestions={setNumberOfQuestions}
+        />
+      )}
+    </div>
   );
 }
