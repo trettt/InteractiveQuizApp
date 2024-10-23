@@ -1,4 +1,4 @@
-import { TextField, Button, Box, Typography } from "@mui/material";
+import styles from "../styles/QuestionForm.module.css";
 
 export default function QuestionForm({
   quizId,
@@ -75,69 +75,43 @@ export default function QuestionForm({
   }
 
   return (
-    <Box
-      sx={{
-        maxWidth: "400px",
-        margin: "0 auto",
-        padding: "20px",
-        backgroundColor: "#f9f9f9",
-        borderRadius: "8px",
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-      }}
-    >
-      <Typography variant="h4" align="center" gutterBottom>
-        Quiz Form
-      </Typography>
-      <form onSubmit={handleSubmit}>
-        <TextField
-          fullWidth
-          label="Question"
-          multiline
-          rows={3}
+    <div className={styles.container}>
+      <h2 className={styles.title}>Quiz Form</h2>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <textarea
+          className={styles.textarea}
           placeholder="Enter the question"
-          margin="normal"
+          rows={2}
         />
-        <TextField
+        <input
           id="answer"
-          fullWidth
-          label="Answer 1"
-          placeholder="Enter Answer 1"
-          margin="normal"
+          className={styles.input}
+          placeholder="option"
         />
-        <TextField
+        <input
           id="answer"
-          fullWidth
-          label="Answer 2"
-          placeholder="Enter Answer 2"
-          margin="normal"
+          className={styles.input}
+          placeholder="option"
         />
-        <TextField
+        <input
           id="answer"
-          fullWidth
-          label="Answer 3"
-          placeholder="Enter Answer 3"
-          margin="normal"
+          className={styles.input}
+          placeholder="option"
         />
-        <TextField
+        <input
           id="answer"
-          fullWidth
-          label="Answer 4"
-          placeholder="Enter Answer 4"
-          margin="normal"
+          className={styles.input}
+          placeholder="option"
         />
-        <TextField
+        <input
           id="correctAnswer"
-          fullWidth
-          label="Correct Answer"
-          placeholder="Enter the correct answer"
-          margin="normal"
+          className={styles.input}
+          placeholder="correct answer"
         />
-        <Box textAlign="center" marginTop={3}>
-          <Button type="submit" variant="contained" color="primary">
-            Submit
-          </Button>
-        </Box>
+        <button type="submit" className={styles.button}>
+          Submit
+        </button>
       </form>
-    </Box>
+    </div>
   );
 }
