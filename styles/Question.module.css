@@ -1,18 +1,23 @@
 .container {
-  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: auto;
   text-align: center;
-  color: black;
+}
+
+.score {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .questionTitle {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
-  color: #333;
+  color: #b99470;
 }
 
 .answerList {
@@ -21,7 +26,7 @@
 }
 
 .answerItem {
-  margin: 10px 0;
+  margin: 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,10 +37,10 @@
 }
 
 .answerLabel {
-  background-color: #f1f1f1;
+  background-color: #f0e0d6;
   color: #333;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 12px 25px;
+  border-radius: 10px;
   border: 2px solid transparent;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -43,16 +48,41 @@
 
 .answerLabel:hover {
   background-color: #e1e1e1;
-  border-color: #0070f3;
+  border-color: #a7835f;
 }
 
 .answerButton:checked + .answerLabel {
-  background-color: #0070f3;
+  background-color: #a7835f;
   color: #fff;
-  border-color: #0070f3;
+  border-color: #a7835f;
 }
 
-.answerButton:focus + .answerLabel {
-  outline: 2px solid #005bb5;
-  outline-offset: 2px;
+.feedback {
+  margin-top: 20px;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.nextButton {
+  display: inline-block;
+  background-color: #a7835f;
+  color: #f7dcb9;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.nextButton:hover {
+  background-color: #8b6a48;
+  transform: scale(1.05);
 }

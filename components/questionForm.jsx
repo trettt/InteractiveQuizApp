@@ -75,43 +75,27 @@ export default function QuestionForm({
   }
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>Quiz Form</h2>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <textarea
-          className={styles.textarea}
-          placeholder="Enter the question"
-          rows={2}
-        />
-        <input
-          id="answer"
-          className={styles.input}
-          placeholder="option"
-        />
-        <input
-          id="answer"
-          className={styles.input}
-          placeholder="option"
-        />
-        <input
-          id="answer"
-          className={styles.input}
-          placeholder="option"
-        />
-        <input
-          id="answer"
-          className={styles.input}
-          placeholder="option"
-        />
-        <input
-          id="correctAnswer"
-          className={styles.input}
-          placeholder="correct answer"
-        />
-        <button type="submit" className={styles.button}>
-          Submit
-        </button>
-      </form>
-    </div>
+      <div className={styles.container}>
+        <h2 className={styles.title}>Quiz Form</h2>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <textarea
+            className={styles.textarea}
+            placeholder="Enter the question"
+            rows={2}
+          />
+          <input id="answer" className={styles.input} placeholder="option" />
+          <input id="answer" className={styles.input} placeholder="option" />
+          <input id="answer" className={styles.input} placeholder="option" />
+          <input id="answer" className={styles.input} placeholder="option" />
+          <input
+            id="correctAnswer"
+            className={styles.input}
+            placeholder="correct answer"
+          />
+          <button type="submit" className={styles.button}>
+            Submit
+          </button>
+        </form>
+      </div>
   );
 }

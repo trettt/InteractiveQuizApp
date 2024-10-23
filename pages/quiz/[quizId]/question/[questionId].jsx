@@ -67,7 +67,7 @@ export default function Question() {
 
   return (
     <div className={styles.container}>
-      <div>Score: {score}</div>
+      <div className={styles.score}>Score: {score}</div>
       <h1 className={styles.questionTitle}>{currentQuestion.question}</h1>
       <ul className={styles.answerList}>
         {currentQuestion.answers.map((answer, index) => (
@@ -89,11 +89,11 @@ export default function Question() {
         ))}
       </ul>
       {questionAnswered && (
-        <div>
-          <p>
+        <div className={styles.feedback}>
+          <p className={isCorrect ? styles.correct : styles.incorrect}>
             {isCorrect
-              ? "Corect"
-              : `Gresit! Raspunsul corect este ${
+              ? "Good job! That's correct!"
+              : `Wrong:(! The correct answer is ${
                   currentQuestion.answers[
                     Number(currentQuestion.correctAnswerPosition)
                   ]
@@ -105,6 +105,7 @@ export default function Question() {
               href={`/quiz/${quizId}/question/${
                 questions[currentIndex + 1].id
               }`}
+              className={styles.nextButton}
             >
               Next
             </Link>
