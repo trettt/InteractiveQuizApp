@@ -13,6 +13,7 @@ export default function Quiz() {
   const [error, setError] = useState(null);
   const [showForm, setShowForm] = useState(false);
   const [quiz, setQuiz] = useState(null);
+  const [firstQuestionId, setFirstQuestionId] = useState(null);
 
   useEffect(() => {
     async function fetchQuiz() {
@@ -23,7 +24,6 @@ export default function Quiz() {
         }
         const data = await res.json();
         const currentQuiz = data.find((quiz) => quiz.id === parseInt(quizId));
-        console.log(currentQuiz);
         setQuiz(currentQuiz);
         setLoading(false);
       } catch (err) {
@@ -48,6 +48,9 @@ export default function Quiz() {
         const data = await res.json();
         const quizQuestions = data.filter((q) => q.quizId === parseInt(quizId));
         setNumberOfQuestions(quizQuestions.length);
+        setFirstQuestionId(
+          quizQuestions.length > 0 ? quizQuestions[0].id : null
+        );
         setLoading(false);
       } catch (err) {
         setError(err.message);
@@ -86,7 +89,7 @@ export default function Quiz() {
       <p className={styles.info}>
         This quiz contains <b>{numberOfQuestions}</b> questions.
       </p>
-      <Link href={`/quiz/${quizId}/question/1`}>
+      <Link href={`/quiz/${quizId}/question/${firstQuestionId}`}>
         <button className={styles.button}>Start Quiz</button>
       </Link>
       <p> ... or </p>

@@ -43,8 +43,9 @@ export default function Question() {
     setIsCorrect(false);
   }, [questionId]);
 
-  const currentQuestion = questions.find((q) => q.id === parseInt(questionId));
+  const currentQuestion = questions.find((q) => q.id === questionId);
   const numberOfQuestions = questions.length;
+  const currentIndex = questions.findIndex((q) => q.id === questionId);
 
   function checkAnswer() {
     const selectedAnswer = document.querySelector("input[name=answer]:checked");
@@ -63,9 +64,6 @@ export default function Question() {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
-
-  if (Number(numberOfQuestions) === 0)
-    return <div>There are no questions! lol</div>;
 
   return (
     <div className={styles.container}>
@@ -102,8 +100,12 @@ export default function Question() {
                 }`}
           </p>
 
-          {Number(numberOfQuestions) !== Number(questionId) ? (
-            <Link href={`/quiz/${quizId}/question/${Number(questionId) + 1}`}>
+          {Number(numberOfQuestions) !== currentIndex + 1 ? (
+            <Link
+              href={`/quiz/${quizId}/question/${
+                questions[currentIndex + 1].id
+              }`}
+            >
               Next
             </Link>
           ) : (

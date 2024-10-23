@@ -1,74 +1,161 @@
 [
   {
-    "id": 1,
+    "id": "e1c7b09e-7c0d-4bc1-875a-c71513b4fbf2",
     "quizId": 1,
     "question": "What is the capital of France?",
+    "answers": ["Berlin", "London", "Paris", "Madrid"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "74a1b1c6-7f4a-4a30-9e3d-834f546874c1",
+    "quizId": 1,
+    "question": "When did WW2 start?",
+    "answers": ["1945", "1939", "1914", "1929"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": "f24c69ea-ffb4-4927-987a-c42c71dffbd8",
+    "quizId": 1,
+    "question": "Who painted the \"Mona Lisa\"?",
+    "answers": ["Da Vinci", "Picasso", "Van Gogh", "Rembrandt"],
+    "correctAnswerPosition": 0
+  },
+  {
+    "id": "9dce0c95-5a68-4b90-9519-95c8249495d4",
+    "quizId": 1,
+    "question": "Which planet is known as the Red Planet?",
+    "answers": ["Earth", "Mars", "Jupiter", "Venus"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": "8b9b8c10-fb6a-4e08-81a7-85e4d18b58d0",
+    "quizId": 1,
+    "question": "What is the largest mammal?",
+    "answers": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": "01477ab5-bd87-4ef9-80cf-396d1e508769",
+    "quizId": 1,
+    "question": "What is the longest river in the world?",
+    "answers": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+    "correctAnswerPosition": 0
+  },
+  {
+    "id": "41d0cf68-cf88-4f1f-bfee-990973b1d11d",
+    "quizId": 1,
+    "question": "Which country is the origin of the cocktail Mojito?",
+    "answers": ["Brazil", "Mexico", "Cuba", "Spain"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "50ad2d3c-02d0-4606-9271-dfa601b6db5b",
+    "quizId": 2,
+    "question": "Which planet is known as the Red Planet?",
+    "answers": ["Earth", "Mars", "Jupiter", "Venus"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": "eb4296a7-5fc5-4204-bd2c-cd62c90fb79e",
+    "quizId": 2,
+    "question": "What is the largest mammal?",
+    "answers": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": "fd78bcd5-9086-4b29-bda2-24dbbd9e528f",
+    "quizId": 2,
+    "question": "Who wrote 'Hamlet'?",
     "answers": [
-      "Berlin",
-      "London",
-      "Paris",
-      "Madrid"
+      "William Wordsworth",
+      "Charles Dickens",
+      "William Shakespeare",
+      "George Orwell"
     ],
     "correctAnswerPosition": 2
   },
   {
-    "id": 2,
-    "quizId": 1,
-    "question": "When did WW2 start?",
-    "answers": [
-      "1945",
-      "1939",
-      "1914",
-      "1929"
-    ],
+    "id": "e67d0dd0-9a87-47b7-8b5d-8bda5c91fa6d",
+    "quizId": 2,
+    "question": "What is the hardest natural substance on Earth?",
+    "answers": ["Gold", "Iron", "Diamond", "Granite"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "f3ac8012-6c19-4f1e-b3bb-609a0a1a89f8",
+    "quizId": 2,
+    "question": "What is the smallest country in the world?",
+    "answers": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
     "correctAnswerPosition": 1
   },
   {
-    "id": 3,
-    "quizId": 1,
-    "question": "Who painted the \"Mona Lisa\"?",
-    "answers": [
-      "Da Vinci",
-      "Picasso",
-      "Van Gogh",
-      "Rembrandt"
-    ],
+    "id": "5f3f8f16-7c77-4b14-88b6-1c0b733dbe30",
+    "quizId": 3,
+    "question": "What is the chemical symbol for gold?",
+    "answers": ["Au", "Ag", "Pb", "Fe"],
     "correctAnswerPosition": 0
   },
   {
-    "id": 4,
-    "quizId": 1,
-    "question": "Which planet is known as the Red Planet?",
-    "answers": [
-      "Earth",
-      "Mars",
-      "Jupiter",
-      "Venus"
-    ],
+    "id": "8503fcd5-1f43-423e-9787-26c384d7d622",
+    "quizId": 3,
+    "question": "What gas do plants absorb from the atmosphere?",
+    "answers": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
     "correctAnswerPosition": 1
   },
   {
-    "id": 5,
-    "quizId": 1,
-    "question": "What is the largest mammal?",
-    "answers": [
-      "Elephant",
-      "Blue Whale",
-      "Giraffe",
-      "Hippopotamus"
-    ],
+    "id": "6409182d-35c6-496f-bc27-cb5c491c8b48",
+    "quizId": 3,
+    "question": "What is the boiling point of water in Celsius?",
+    "answers": ["90°C", "100°C", "110°C", "120°C"],
     "correctAnswerPosition": 1
   },
   {
-    "id": 6,
-    "quizId": 1,
-    "question": "fds",
-    "answers": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "correctAnswerPosition": 0
+    "id": "7cfba993-07f5-495d-80a2-107c0faaf084",
+    "quizId": 3,
+    "question": "What is the powerhouse of the cell?",
+    "answers": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "99293b7f-5c03-45a0-915f-cf4f382d27cf",
+    "quizId": 3,
+    "question": "Which planet is the hottest in our solar system?",
+    "answers": ["Mercury", "Venus", "Mars", "Earth"],
+    "correctAnswerPosition": 1
+  },
+  {
+    "id": "b45bbd0e-2627-4965-b89e-b0d68df407f6",
+    "quizId": 4,
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "answers": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "c3c2ba9e-9157-4822-95ed-d6c16711d9b4",
+    "quizId": 4,
+    "question": "What is the hardest metal?",
+    "answers": ["Steel", "Titanium", "Tungsten", "Aluminum"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "82630912-f66e-49e6-b54a-55c96723a82a",
+    "quizId": 4,
+    "question": "Which element has the atomic number 1?",
+    "answers": ["Oxygen", "Helium", "Hydrogen", "Carbon"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "59b0d6c3-cc16-4ef5-bde6-4b352b648bf4",
+    "quizId": 4,
+    "question": "What is the human body’s largest organ?",
+    "answers": ["Liver", "Heart", "Skin", "Brain"],
+    "correctAnswerPosition": 2
+  },
+  {
+    "id": "d77cc1c0-9a78-4e0d-98fa-182f8f885746",
+    "quizId": 4,
+    "question": "What force keeps us on the ground?",
+    "answers": ["Magnetism", "Gravity", "Friction", "Inertia"],
+    "correctAnswerPosition": 1
   }
 ]

@@ -21,9 +21,6 @@ export default async function handler(req, res) {
       const newQuestion = req.body;
       questions.push(newQuestion);
 
-      console.log(newQuestion);
-      console.log(questions);
-
       await fs.writeFile(filePath, JSON.stringify(questions, null, 2));
 
       res.status(201).json(newQuestion);

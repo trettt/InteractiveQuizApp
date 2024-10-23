@@ -34,8 +34,10 @@ export default function QuestionForm({
       return null;
     }
 
+    const uniqueId = crypto.randomUUID();
+
     return {
-      id: numberOfQuestions + 1,
+      id: uniqueId,
       quizId: Number(quizId),
       question: question,
       answers: answers,
